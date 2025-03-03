@@ -1,4 +1,4 @@
-/* ======== Глобальні стилі ======== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +6,22 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* ======== Основні кольори ======== */
+
 :root {
-    --primary-color: #ff5733;  /* Помаранчевий */
-    --secondary-color: #333;   /* Темний */
+    --primary-color: #ff5733;  
+    --secondary-color: #333;   
     --background-color: #f4f4f4;
     --text-color: #222;
 }
 
-/* ======== Оформлення сторінки ======== */
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* ======== Навігаційне меню ======== */
+
 nav {
     background: var(--secondary-color);
     display: flex;
@@ -51,7 +51,7 @@ nav ul li a:hover {
     background: var(--primary-color);
 }
 
-/* ======== Головний заголовок ======== */
+
 header {
     text-align: center;
     padding: 50px;
@@ -63,7 +63,7 @@ header h1 {
     font-size: 48px;
 }
 
-/* ======== Контейнер контенту ======== */
+
 .container {
     width: 80%;
     margin: 20px auto;
@@ -73,7 +73,7 @@ header h1 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ======== Галерея ======== */
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +91,7 @@ header h1 {
     transform: scale(1.1);
 }
 
-/* ======== Форма зворотного зв’язку ======== */
+
 form {
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ form button:hover {
     background: #e64c2f;
 }
 
-/* ======== Футер ======== */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -132,7 +132,7 @@ footer {
     color: white;
 }
 
-/* ======== Адаптивність ======== */
+
 @media (max-width: 768px) {
     .gallery {
         flex-direction: column;
