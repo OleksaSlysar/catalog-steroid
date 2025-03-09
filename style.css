@@ -9,29 +9,56 @@ body {
 header {
     background: #222;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1.5em;
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування елементів */
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    position: relative;
 }
 
+/* Логотип */
+.logo img {
+    width: 30px; /* Визначте бажаний розмір логотипу */
+    height: auto;
+}
+
+/* Заголовок каталогу */
+.site-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: 10px; /* Відступ між логотипом і заголовком */
+}
+
+/* Стилі для навігації, що буде під заголовком */
 nav {
-    background: #333;
+    margin-top: 10px; /* Відступ між заголовком і навігацією */
+    width: 100%;
     text-align: center;
-    padding: 10px 0;
 }
 
+/* Стилі для елементів навігації */
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    margin-right: 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; 
+}
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -157,3 +184,4 @@ footer {
 .steroid-info {
     max-width: 600px; 
 }
+

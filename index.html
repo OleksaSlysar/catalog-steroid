@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог Стероїдів</title>
+    <title>Онлайн каталог стероїдів</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Каталог Стероїдів</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Домашня</a></li>
-            <li><a href="about.html">Про нас</a></li>
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="portfolio.html">Портфоліо</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-    </nav>
+    <div id="header-container"></div>
 
-    <div class="container">
-        <h2>Ласкаво просимо до каталогу стероїдів</h2>
-        <p>Ми пропонуємо лише найкращі товари. Ознайомтесь з нашим асортиментом нижче.</p>
-
-        <section class="gallery">
-            <a href="steroid1.html"><img src="images/steroid1.jpg" alt="Стероїд 1"></a>
-            <a href="steroid2.html"><img src="images/steroid2.jpeg" alt="Стероїд 2"></a>
-            <a href="steroid3.html"><img src="images/steroid3.jpeg" alt="Стероїд 3"></a>
-        </section>
-    </div>
+    <main>
+        <h2 class="page-title">Наш топ стероїдів</h2>
+        <div class="gallery">
+            <a href="#steroid1">
+                <img src="images/steroid1.jpg" alt="Стероїд 1">
+            </a>
+            <a href="#steroid2">
+                <img src="images/steroid2.jpeg" alt="Стероїд 2">
+            </a>
+            <a href="#steroid3">
+                <img src="images/steroid3.jpeg" alt="Стероїд 3">
+            </a>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Бобі Гантеля(я не на стероїдах).</p>
+        <p>© 2025 Онлайн каталог стероїдів. Всі права захищено.</p>
     </footer>
-</body>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                });
+        });
+    </script>
+
+</body>
 </html>
