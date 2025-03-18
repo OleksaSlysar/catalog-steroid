@@ -3,41 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Онлайн каталог стероїдів</title>
+    <title>Головна</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="header.js"></script>
 </head>
 <body>
 
-    <div id="header-container"></div>
+<header id="header"></header>
 
-    <main>
-        <h2 class="page-title">Наш топ стероїдів</h2>
-        <div class="gallery">
-            <a href="#steroid1">
-                <img src="images/steroid1.jpg" alt="Стероїд 1">
-            </a>
-            <a href="#steroid2">
-                <img src="images/steroid2.jpeg" alt="Стероїд 2">
-            </a>
-            <a href="#steroid3">
-                <img src="images/steroid3.jpeg" alt="Стероїд 3">
-            </a>
-        </div>
-    </main>
+<main>
+    <h2 class="page-title">Наш топ стероїдів</h2>
+    <div class="gallery">
+        <img src="images/steroid1.jpg" alt="Стероїд 1">
+        <img src="images/steroid2.jpeg" alt="Стероїд 2">
+        <img src="images/steroid3.jpeg" alt="Стероїд 3">
+    </div>
+</main>
 
-    <footer>
-        <p>© 2025 Онлайн каталог стероїдів. Всі права захищено.</p>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header-container").innerHTML = data;
-                });
-        });
-    </script>
-
+<footer>
+    <p>&copy; 2025 Стероїдний каталог. Всі права захищені.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
